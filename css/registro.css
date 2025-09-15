@@ -116,3 +116,16 @@ span {
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 440px ) {
+    body {
+        background-image: none;
+        background: linear-gradient(to bottom, #1F1D2A, #0C0A0D);
+    }
+    #registro {
+        background: none;
+        background-color: transparent;
+        border: none ;
+    }
+
+}

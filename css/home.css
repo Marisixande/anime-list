@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("/assets/Poppins/Poppins-Regular.ttf");
+}
+
+/* Tela cheia */
+body {
+    background-color: #000000de;
+    background-position: center;
+    width: 100dvw;
+    height: 100dvh;
+    color: #fff;
+}
+
+.banner{
+    width: 10rem;
+}
+
+.destaques {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem ;
+      
+    }
+    
+.destaque {
+        width: 15rem;
+        border-radius: 5px;
+}
+
+.dan {
+    width: 12.5%;
+}

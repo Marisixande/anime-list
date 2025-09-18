@@ -9,6 +9,11 @@
     src: url("/assets/Poppins/Poppins-Regular.ttf");
 }
 
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url("/assets/Poppins/Poppins-ExtraBold.ttf");
+}
+
 /* Tela cheia */
 body {
     background-color: #000000de;
@@ -18,16 +23,84 @@ body {
     color: #fff;
 }
 
-.banner{
-    width: 10rem;
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+input {
+    color: #000000;
+    background-color: transparent;
+    border-radius: 42px;
+    background-image: url(/assets/img/tela-inicial/pesquisar.png);
+    background-repeat: no-repeat;
+    background-position: 9rem;
+    padding: 0.5rem;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border: #000000;
+    border: size 20px;
+   border-radius: 15px;
+   padding-left: 30rem;
+   padding: 0rem 0em 0rem 8rem;
+}
+
+.user{
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+header {
+    background-image: url("/assets/img/tela-inicial/berserkban.png");
+    height: 73dvh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.sobreposto{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 4rem 9rem;
+}
+.primlugar{
+    width: 20%;
+}
+.sobreposto button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 4rem;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+    background-color: #efefef;
+    font-family: Poppins-ExtraBold, sans-serif;
+    gap: 0.10rem;
 }
 
 .destaques {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       gap: 2rem ;
-      
+      padding: 30px;
     }
     
 .destaque {
@@ -35,6 +108,19 @@ body {
         border-radius: 5px;
 }
 
-.dan {
-    width: 12.5%;
+.sugestoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.sugestoes img{
+    border-radius: 15px;
+}
+
+h4{
+    padding-left: 2rem;
 }

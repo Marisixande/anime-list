@@ -121,6 +121,19 @@ header {
     border-radius: 15px;
 }
 
-h4{
+.h4{
     padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 440px ) {
+    body {
+        background-image: none;
+        background: linear-gradient(to top, #1F1D2A, #0C0A0D);
+    }
+
+    
+
 }

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
+
 @font-face {
     font-family: Poppins;
     src: url("/assets/Poppins/Poppins-Regular.ttf");
@@ -23,18 +24,20 @@ body {
     color: #fff;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1rem;
     padding: 1rem 0rem 0rem 0rem;
 }
+
 ul {
     display: flex;
     justify-content: space-around;
     gap: 5rem;
 }
+
 input {
     color: #000000;
     background-color: transparent;
@@ -51,12 +54,12 @@ input {
     gap: 3rem;
     border: #000000;
     border: size 20px;
-   border-radius: 15px;
-   padding-left: 30rem;
-   padding: 0rem 0em 0rem 30rem;
+    border-radius: 15px;
+    padding-left: 30rem;
+    padding: 0rem 0em 0rem 30rem;
 }
 
-.user{
+.user {
     width: 1.9rem;
     height: 1.9rem;
 }
@@ -69,16 +72,18 @@ header {
 
 }
 
-.sobreposto{
+.sobreposto {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 4rem 9rem;
 }
-.primlugar{
+
+.primlugar {
     width: 20%;
 }
+
 .sobreposto button {
     display: flex;
     justify-content: center;
@@ -96,16 +101,16 @@ header {
 }
 
 .destaques {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      gap: 2rem ;
-      padding: 30px;
-    }
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 30px;
+}
+
 .destaque {
-        width: 15rem;
-        border-radius: 5px;
+    width: 15rem;
+    border-radius: 5px;
 }
 
 .sugestoes {
@@ -117,23 +122,59 @@ header {
     padding: 30px;
 }
 
-.sugestoes img{
+.sugestoes img {
     border-radius: 15px;
 }
 
-.h4{
+.h4 {
     padding-left: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 440px ) {
+@media screen and (max-width: 440px) {
     body {
         background-image: none;
         background: linear-gradient(to top, #1F1D2A, #0C0A0D);
     }
+}
 
-    
+.modal {
+    position: relative;
+    top: -188%;
+    bottom: 0;
+    right: 0%;
+    left: 25%;
+    background-color: #080702;
+    opacity: 95%;
+    width: 55%;
+    height: 120%;
+    border-radius: 28px;
+}
+
+.janela {
+    background-image: url(/assets/img/tela-inicial/dandandanjanela.png);
+    width: 100%;
+    background-size: 100% 100%;
+    height: 60%;
+    border-radius: 28px;
+
+    display: flex;
+    align-items: end;
+}
+
+.botaol {
+
+    width: 7rem;
+    height: 1.9rem;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    background-color: #efefef;
+    font-family: Poppins-ExtraBold, sans-serif;
+    margin-left: 6%;
 
 }

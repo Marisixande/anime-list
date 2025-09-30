@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <title>Anime List</title>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <nav class="nav">
+      <ul class="nav-left">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destaques</a></li>
+        <li><a href="#">Favoritos</a></li>
+        <li><a href="#">Filtros</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="search-container">
+          <input type="search" placeholder="Pesquisar" />
+          <img src="/assets/images/lupa.png" class="search-icon" alt="Pesquisar" />
+        </div>
+
+        <!-- Botão Perfil com dropdown -->
+        <div class="perfil-menu">
+          <img src="/assets/images/perfil.png" alt="Perfil" class="perfil-icon"
+            onclick="document.querySelector('.dropdown').classList.toggle('show')" />
+          <ul class="dropdown">
+            <li>
+              <a href="/pages/editar-perfil.html">Informações pessoais</a>
+            </li>
+            <li><a href="#">Configurações de privacidade</a></li>
+            <li><a href="#">Assinatura</a></li>
+            <li><a href="#">Histórico</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h2><span>1º Lugar</span> nos destaques</h2>
+      <button class="btn-assistir">▶ Assistir</button>
+      <p>T1: Episódio 1</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Grupo 1 -->
+    <h2 class="group-title">Destaques da Semana</h2>
+    <div class="wrapper">
+      <section id="section1">
+        <a href="#section2" class="arrow__btn">‹</a>
+        <div class="item">
+          <img src="/assets/images/destaques-semana/berserk.png" alt="Berserk" />
+        </div>
+        <div class="item">
+          <img src="/assets/images/destaques-semana/bleach.png" alt="Bleach" />
+        </div>
+        <div class="item">
+          <img src="/assets/images/destaques-semana/dandadan.png" alt="Dandadan" />
+        </div>
+        <div class="item">
+          <img src="/assets/images/destaques-semana/devilmycry.png" alt="Devil May Cry" />
+        </div>
+        <a href="#section2" class="arrow__btn">›</a>
+      </section>
+
+      <section id="section2">
+        <a href="#section1" class="arrow__btn">‹</a>
+        <div class="item">
+          <img src="/assets/images/destaques-semana/invencivel.png" alt="Invencível" />
+        </div>
+        <div class="item">
+          <img src="/assets/images/destaques-semana/parasyte.png" alt="Parasyte" />
+        </div>
+        <div class="item">
+          <img src="/assets/images/destaques-semana/solo-leveling.png" alt="Solo Leveling" />
+        </div>
+        <a href="#section1" class="arrow__btn">›</a>
+      </section>
+    </div>
+
+    <!-- Grupo 2 -->
+    <h2 class="group-title">Mais Assistidos</h2>
+    <div class="wrapper">
+      <section id="section100">
+        <a href="#section101" class="arrow__btn">‹</a>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/sakura-cardcaptor.jpg" alt="Nanatsu" />
+        </div>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/cavaleiros-do-zodiaco.webp" alt="One Piece" />
+        </div>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/shigenki-no-kiojin.jpg" alt="One Piece" />
+        </div>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/sosou-no-frieren.jpg" alt="One Piece" />
+        </div>
+        <a href="#section101" class="arrow__btn">›</a>
+      </section>
+
+      <section id="section101">
+        <a href="#section100" class="arrow__btn">‹</a>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/mha.webp" alt="Samurai" />
+        </div>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/tokyo-revengers.png" alt="Tokyo Revengers" />
+        </div>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/dororo.webp" alt="Tokyo Revengers" />
+        </div>
+        <div class="item assistidos">
+          <img src="/assets/images/mais-assistidos/oshi-no-ko.webp" alt="Tokyo Revengers" />
+        </div>
+        <a href="#section100" class="arrow__btn">›</a>
+      </section>
+    </div>
+
+    <!-- Grupo 3 -->
+    <h2 class="group-title">Você pode gostar</h2>
+    <div class="wrapper">
+      <section id="section200">
+        <a href="#section201" class="arrow__btn">‹</a>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/hunter-hunter.jpg" alt="hunter-hunter" />
+        </div>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/Bakugan.jpg" alt="bakugan" />
+        </div>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/Neon Genesis Evangelion poster.jpg" alt="evangelion" />
+        </div>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/Yu-Gi-Oh! GX.jpg" alt="GX" />
+        </div>
+        <a href="#section201" class="arrow__btn">›</a>
+      </section>
+
+      <section id="section201">
+        <a href="#section200" class="arrow__btn">‹</a>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/xyz.webp" alt="XYZ" />
+        </div>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/the-summer-hikaru-died.webp" alt="The Summer Hikaru Died" />
+        </div>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/yu-gi-oh.jpg" alt="yugioh" />
+        </div>
+        <div class="item gostar">
+          <img src="/assets/images/voce-pode-gostar/noragami.webp" alt="noragami" />
+        </div>
+        <a href="#section200" class="arrow__btn">›</a>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

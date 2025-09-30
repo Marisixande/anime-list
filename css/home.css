@@ -1,3 +1,5 @@
+/* TODO: Lembrar de organizar os arquivos, ta ficando gigante , separar o css por componentes especificos simulando os componentes da página */
+
 :root {
   --item-grow: 1.2;
   --duration: 250ms;
@@ -189,6 +191,141 @@ body {
   background-color: #eab308;
 }
 
+/* ---------------------------- Destaques da Semana ---------------------------- */
+
+.destaques {
+  padding-inline: 1rem;
+}
+
+.destaques-list {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.destaque-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/3;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease;
+}
+
+.destaque-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.destaque-card:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* número no fundo */
+.destaque-card .num-bg {
+  position: absolute;
+  z-index: 1;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  font-weight: 900;
+  font-size: clamp(2.4rem, 3.5vw, 4rem);
+  /* menor no desktop */
+  color: rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ===== MOBILE  vira carousel ===== */
+@media (max-width: 768px) {
+  .destaques-list {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .destaque-card {
+    flex: 0 0 68%;
+    /* ocupa ~70% da tela */
+    aspect-ratio: 2/3;
+    scroll-snap-align: center;
+  }
+
+  .destaque-card .num-bg {
+    font-size: clamp(3.5rem, 20vw, 6rem);
+    /* maior no mobile */
+    left: 0.6rem;
+    bottom: 0.5rem;
+  }
+
+  .destaques-list::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ------------------- Ver mais ------------------- organizar dps qualquer coisa */
+.vermais-btn {
+  font-size: 0.9rem;
+  margin-left: 0.6rem;
+  color: #facc15;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.vermais-btn:hover {
+  text-decoration: underline;
+}
+
+/* Grid escondido por padrão */
+.grid-extra {
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.grid-extra .extra img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+dialog ::backdrop {
+}
+
+
+.dialog {
+  align-self: center;
+  justify-self: center;
+  z-index: 80;
+  display: none;
+  width: 55%;
+  height: 120%;
+  border-radius: 28px;
+  background-color: #050404da;
+ color: rgb(252, 252, 252);
+ border: none;
+}
+
+.wrapper section div:hover .dialog {
+  display: flex;
+
+}
+
+/* Quando checkbox for marcado, mostra */
+#toggle-mais:checked~.grid-extra {
+  display: grid;
+}
+
 /* ------------------- CAROUSEL ------------------- */
 h2.group-title {
   margin: 2rem 1rem 0.5rem;
@@ -203,15 +340,6 @@ h2.group-title {
   margin-bottom: 2rem;
 }
 
-.wrapper .assistidos {
-  width: 15rem;
-  height: 20rem;
-}
-
-.wrapper .gostar {
-  width: 15rem;
-  height: 20rem;
-}
 .wrapper section {
   width: 100%;
   position: relative;
